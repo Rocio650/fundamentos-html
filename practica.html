@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Curso Básico HTML5</title>
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="styles/style.css" />
+        <script src="js/file.js"></script>
+
+    </head>
+ 
+    <body>
+       
+        <header>
+            <h1>Hola Mundo</h1>
+            <nav>
+                <ul>
+                    <li><a href="/uno.html">Menú ítem Uno</a></li>
+                    <li><a href="/dos.html">Menú ítem Dos</a></li>
+                    <li><a href="/tres.html">Menú ítem Tres</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section>
+            <h2>Don Quijote de la Mancha</h2>
+            <p> En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lentejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas con sus pantuflos de lo mismo, los días de entre semana se honraba con su vellori de lo más fino. </p>
+            <img src="img/publicity.PNG" alt="publicity image">
+        </section>
+
+        <form>
+            <fieldset>
+                <legend>Datos personales</legend>
+                Nombre <input type="text"> <br>
+                Apellidos <input type="text"> <br>
+                Teléfono <input type="tel"> <br>
+                <!-- radiobutton explícito -->
+                <input type="radio" id="dni" name="documento" value="dni">
+                <label for="dni">DNI</label><br>
+                <!-- radiobutton implícito -->
+                <label for="nie">
+                    <input name="documento" id="nie" type="radio" value="nie" /> NIE
+                </label><br>
+                Nº Documento <input type="text"> 
+            </fieldset>
+
+            <fieldset>
+                <legend>Otros datos</legend>
+                Nº de hermanos/as <input type="text"> <br>
+                <br>
+                Deportes favoritos  
+                <ol>
+                    <li>Fútbol <input type="checkbox"></li>
+                    <li>Baloncesto <input type="checkbox"> </li>
+                    <li>Rugby <input type="checkbox"> </li>
+                    <li>Padel <input type="checkbox"></li>
+                    <li>Pelota vasca <input type="checkbox"> </li>
+                </ol> 
+            </fieldset>
+            <input type="reset" value="Borrar formulario">
+            <input type="submit" value="Enviar">
+        </form>
+
+        <br>
+            <table>
+                <caption> Título de la tabla </caption>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Teléfono</th>
+                    <th>DNI/NIE</th>
+                    <th>Deportes</th>
+                </tr>
+                <tr>
+                    <td>Rocío</td>
+                    <td>Fernández</td>
+                    <td>973736363</td>
+                    <td>23456632S</td>
+                    <td>Baloncesto</td>
+                </tr>
+                <tr>
+                    <td>Eva</td>
+                    <td>Nuñez</td>
+                    <td>973222363</td>
+                    <td>23411632B</td>
+                    <td>Rugby, Fútbol</td>
+                </tr>
+            </table>
+    </body>
+</html>
